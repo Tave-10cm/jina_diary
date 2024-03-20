@@ -1,38 +1,114 @@
+body {
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+@media (min-width: 650px) {
+    .App {
+        width: 640px;
+    }
+}
+
+@media (max-width: 650px) {
+    .App {
+        width: 90vw;
+    }
+}
+
+#root {
+    background-color: #bdcda2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .App {
-  text-align: center;
+    min-height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* MyButton */
+.MyButton {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+    font-size: 18px;
+  
+    white-space: nowrap;
   }
+
+.MyButton_default {
+    background-color: #819163;
+    color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.MyButton_positive {
+    background-color: #97ad6e;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.MyButton_negative {
+    background-color: #78904d;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header */
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid#738552;
+}
+
+header>div {
+    display: flex;
+}
+
+header .head_text {
+    width: 50%;
+    font-size: 25px;
+    justify-content: center;
+}
+
+header .head_btn_left {
+    width: 25%;
+    justify-content: start;
+}
+
+header .head_btn_right {
+    width: 25%;
+    justify-content: end;
+}
+
+/* MyMenu */
+
+.MyMenu {
+    padding-top: 20px;
+    display: flex;
+}
+
+.MyMenu>button {
+    cursor: pointer;
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 33px;
+    padding-right: 33px;
+    background-color: #738552;
+    color: #ececec;
+
+    border: 1px solid #ececec;
+    border-radius: 5px;
+
 }
