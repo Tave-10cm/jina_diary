@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yeon+Sung&display=swap');
+
 body {
     background-color: #ececec;
     display: flex;
@@ -5,6 +7,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0px;
+    font-family: Yeon sung;
 }
 
 @media (min-width: 650px) {
@@ -20,7 +23,7 @@ body {
 }
 
 #root {
-    background-color: #bdcda2;
+    background-color: #faf1f2;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -32,32 +35,33 @@ body {
 
 /* MyButton */
 .MyButton {
+    font-family: Yeon sung;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-  
+
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-  
+
     font-size: 18px;
-  
+
     white-space: nowrap;
-  }
+}
 
 .MyButton_default {
-    background-color: #819163;
-    color: black;
+    background-color: #f1d1d2;
+    color: rgb(255, 255, 255);
 }
 
 .MyButton_positive {
-    background-color: #97ad6e;
+    background-color: #c1a3a3;
     color: white;
 }
 
 .MyButton_negative {
-    background-color: #78904d;
+    background-color: #7d5959;
     color: white;
 }
 
@@ -68,7 +72,7 @@ header {
 
     display: flex;
     align-items: center;
-    border-bottom: 1px solid#738552;
+    border-bottom: 1px solid#c1a3a3;
 }
 
 header>div {
@@ -99,16 +103,32 @@ header .head_btn_right {
 }
 
 .MyMenu>button {
+    font-family: Yeon sung;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 30px;
     padding-bottom: 10px;
     padding-top: 10px;
-    padding-left: 33px;
-    padding-right: 33px;
-    background-color: #738552;
-    color: #ececec;
+    padding-left: 43px;
+    padding-right: 43px;
+    width: 29.5vh;
 
-    border: 1px solid #ececec;
+    background-color: #c1a3a3;
+    color: #faf1f2;
+
+    border: 1px solid #faf1f2;
     border-radius: 5px;
 
+}
+
+/* New */
+
+.New .new_date {
+    background-color: #faf1f2;
+    color: #7d5959;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
 }
