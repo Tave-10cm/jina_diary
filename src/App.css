@@ -160,6 +160,7 @@ header .head_btn_right {
 
 
 .select_control {
+    border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 15px;
@@ -176,6 +177,7 @@ header .head_btn_right {
 }
 
 .store_control {
+    border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color:#f1d1d2;
@@ -202,6 +204,7 @@ header .head_btn_right {
 }
 
 .DiaryItem .diary_img{
+    margin-left: 10px;
     cursor: pointer;
     min-width: 120px;
     height: 80px;
@@ -210,7 +213,7 @@ header .head_btn_right {
     justify-content: center;
 }
 
-.diary_btn{
+.DiaryItem .diary_btn{
     display: flex;
     align-items: center;
 }
