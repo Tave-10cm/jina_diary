@@ -5,7 +5,7 @@ const MyMenu = () => {
 
     return (
         <div className="MyMenu">
-            <button onClick={()=>{}}>
+            <button onClick={()=>{navigate('/calendar')}}>
                 Calendar
             </button>
             <button onClick={()=>{navigate('/')}}>
@@ -13,6 +13,9 @@ const MyMenu = () => {
             </button>
             <button onClick={()=>{navigate('/new')}}>
                 +New Diary
+            </button>
+            <button onClick={()=>{navigate('/store')}}>
+                store
             </button>
         </div>
     )

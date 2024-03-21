@@ -1,5 +1,7 @@
 import Header from "../components/Header";
 import MyButton from "../components/MyButton";
+import Controlmenu from "../components/Contromenu";
+import DiaryList from "../components/DiaryList";
 
 const Home = () => {
     return (
@@ -8,7 +10,8 @@ const Home = () => {
             headText={"오늘의 날짜"}
             leftChild={<MyButton text={"<"}/>}
             rightChild={<MyButton text={">"} />}/>
-            <h2>Home 페이지</h2>
+            <Controlmenu />
+            <DiaryList />
         </div>
     )
 }
