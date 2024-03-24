@@ -1,6 +1,8 @@
+import './Header.css';
+
 const Header = ({ headText, leftChild, rightChild }) => {
     return (
-        <header>
+        <header className='Header'>
             <div className="head_btn_left">
                 {leftChild}
             </div>

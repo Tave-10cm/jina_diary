@@ -1,5 +1,7 @@
 import Icon, { HeartTwoTone } from "@ant-design/icons";
 import MyButton from "./MyButton";
+import './DiaryItem.css'
+import { useNavigate } from "react-router-dom";
 
 const HeartSvg = () => (
     <svg width="1.5em" height="1.5em" fill="currentColor" viewBox="0 0 1024 1024">
@@ -9,24 +11,31 @@ const HeartSvg = () => (
 
 const HeartIcon = (props) => <Icon component={HeartSvg} {...props} />;
 
-const DiaryItem = () => {
+const DiaryItem = ({ id, emotionId, createdDate, content }) => {
+    const navigate = useNavigate();
+
     return (
         <div className="DiaryItem">
             <HeartIcon
                 style={{ color: '#ffc0cb', }} />
-            <div className="diary_img">
+            <div
+                onClick={() => navigate(`/diary/${id}`)}
+                className="diary_img">
                 <img src={"https://img.freepik.com/free-photo/close-up-portrait-on-beautiful-cat_23-2149214373.jpg"} />
             </div>
-            <div className="diary_wrapper">
+            <div
+                onClick={() => navigate(`/diary/${id}`)}
+                className="diary_wrapper">
                 <div className="diary_date">
-                    오늘날짜
+                    {new Date(createdDate).toLocaleDateString()}
                 </div>
                 <div className="diary_content">
-                    오늘의 일기
+                    {content}
                 </div>
             </div>
             <div className="diary_btn">
-                <MyButton text={"삭제하기"} type={"negative"} />
+                <MyButton
+                    onClick={() => navigate(`/edit/${id}`)} text={"수정하기"} type={"negative"} />
             </div>
         </div>
     )

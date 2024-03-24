@@ -5,17 +5,14 @@ const MyMenu = () => {
 
     return (
         <div className="MyMenu">
-            <button onClick={()=>{navigate('/calendar')}}>
-                Calendar
+            <button onClick={()=>{navigate('/lookbook')}}>
+                LOOK BOOK
             </button>
             <button onClick={()=>{navigate('/')}}>
                 Home
             </button>
-            <button onClick={()=>{navigate('/new')}}>
-                +New Diary
-            </button>
-            <button onClick={()=>{navigate('/store')}}>
-                store
+            <button onClick={()=>{navigate('/weather')}}>
+                WEATHER
             </button>
         </div>
     )

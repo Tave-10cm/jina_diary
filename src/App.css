@@ -8,6 +8,7 @@ body {
     min-height: 100vh;
     margin: 0px;
     font-family: Yeon sung;
+    display: flex;
 }
 
 @media (min-width: 650px) {
@@ -28,72 +29,11 @@ body {
 }
 
 .App {
-    min-height: 100vh;
+    min-height: 90vh;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-/* MyButton */
-.MyButton {
-    font-family: Yeon sung;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    font-size: 18px;
-
-    white-space: nowrap;
-}
-
-.MyButton_default {
-    background-color: #f1d1d2;
-    color: rgb(255, 255, 255);
-}
-
-.MyButton_positive {
-    background-color: #c1a3a3;
-    color: white;
-}
-
-.MyButton_negative {
-    background-color: #7d5959;
-    color: white;
-}
-
-/* Header */
-header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid#c1a3a3;
-}
-
-header>div {
-    display: flex;
-}
-
-header .head_text {
-    width: 50%;
-    font-size: 25px;
-    justify-content: center;
-}
-
-header .head_btn_left {
-    width: 25%;
-    justify-content: start;
-}
-
-header .head_btn_right {
-    width: 25%;
-    justify-content: end;
-}
 
 /* MyMenu */
 
@@ -110,50 +50,18 @@ header .head_btn_right {
     padding-top: 10px;
     padding-left: 43px;
     padding-right: 43px;
-    width: 25%;
+    width: 33.3%;
 
     background-color: #c1a3a3;
     color: #faf1f2;
 
     border: 1px solid #faf1f2;
     border-radius: 5px;
-
-}
-
-/* New */
-
-.New input {
-    background-color: #f1d1d2;
-    color: #faf1f2;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
     box-sizing: border-box;
-    font-size: 20px;
-    font-family: Yeon sung;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    cursor: pointer;
 }
 
-.New textarea {
-    font-family: 'Nanum Pen Script';
-    font-size: 20px;
 
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 200px;
-    resize: vertical;
-
-    border: none;
-    border-radius: 5px;
-    background-color: #f1d1d2;
-
-    padding: 20px;
-}
 
 /* Controlmenu */
 
@@ -192,44 +100,3 @@ header .head_btn_right {
     font-weight: bold;
 }
 
-/* DiaryItem */
-.DiaryItem{
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    border-bottom: 1px solid #c1a3a3;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.DiaryItem .diary_img{
-    margin-left: 10px;
-    cursor: pointer;
-    min-width: 120px;
-    height: 80px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-}
-
-.DiaryItem .diary_btn{
-    display: flex;
-    align-items: center;
-}
-
-.diary_date{
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.diary_content{
-    font-size: 18px;
-}
-
-.DiaryItem .diary_wrapper{
-    flex-grow: 1;
-    margin-left: 20px;
-    cursor: pointer;
-}

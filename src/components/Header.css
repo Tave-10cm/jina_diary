@@ -1,0 +1,32 @@
+/* Header */
+Header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* 자식요소들을 가로방향으로 배치 */
+    display: flex;
+    /* 세로를 기준으로 가운데 배치 */
+    align-items: center;
+    border-bottom: 1px solid#c1a3a3;
+}
+
+Header>div {
+    display: flex;
+}
+
+Header .head_text {
+    width: 50%;
+    font-size: 25px;
+    /* display가 flex로 설정된 요소안에서 배치되는 위치로 가운데로 설정한다. */
+    justify-content: center;
+}
+
+Header .head_btn_left {
+    width: 25%;
+    justify-content: start;
+}
+
+Header .head_btn_right {
+    width: 25%;
+    justify-content: end;
+}

@@ -1,0 +1,43 @@
+/* DiaryItem */
+.DiaryItem{
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #c1a3a3;
+
+    display: flex;
+    gap: 15px;
+    /* 섹션간에 최대한 간격을 두고 떨어져 있게 한다. */
+    justify-content: space-between;
+}
+
+.DiaryItem .diary_img{
+    margin-left: 10px;
+    cursor: pointer;
+    min-width: 120px;
+    height: 80px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.DiaryItem .diary_btn{
+    display: flex;
+    align-items: center;
+}
+
+.diary_date{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.diary_content{
+    font-size: 18px;
+}
+
+.DiaryItem .diary_wrapper{
+    flex-grow: 1;
+    margin-left: 20px;
+    cursor: pointer;
+}
