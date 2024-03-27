@@ -1,4 +1,5 @@
 .LookList {
+    color: white;
     border: 2px solid #c1a3a3;
     padding: 15px 15px;
     margin-left: 20px;
@@ -6,9 +7,12 @@
     border-radius: 5px;
     background-color: white;
     width: 250px;
-    max-width: 250px;
-    min-width: 250px;
+    height: 340px;
     cursor: pointer;
+    background-color: #c1a3a3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .LookList .look_date {
@@ -16,14 +20,23 @@
     font-weight: bold;
     margin-top: 5px;
     cursor: pointer;
+    border-bottom: 2px solid white;
 }
 
 .LookList .look_imgupload {
     margin-top: 5px;
     cursor: pointer;
+    border-top: #c1a3a3;
+}
+
+.LookList .look_imgupload > img {
+   width: 200px;
+   margin: 5px;
+   height: 250px;
 }
 
 .LookList .look_intro {
     margin-top: 5px;
     cursor: pointer;
+    font-size: 20px;
 }

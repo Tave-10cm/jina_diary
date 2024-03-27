@@ -5,7 +5,7 @@ import Edit from './pages/Edit';
 import Diary from './pages/Diary';
 import New from './pages/New';
 import MyMenu from './components/MyMenu';
-import { useReducer, useRef, createContext } from 'react';
+import { useReducer, useRef, createContext, useState } from 'react';
 import LookBook from './pages/LookBook';
 import Weather from './pages/Weather';
 import NewLook from './pages/NewLook';
@@ -14,19 +14,19 @@ const lookData = [
   {
     id: 1,
     createdDate: new Date("2024-03-24").getTime(),
-    img:"",
+    img:"https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA4MTFfMjc1%2FMDAxNjYwMTkxMTczMDMy.dcWGPPy1kBZAqjcO-_bxRtJSLvAgY169abF8P5BU3Twg.m0RJvV2Me-d_p13ZyXKcHrxxkqs15AhxhMVPfOscuBYg.JPEG.hyunju_yu09%2FIMG_8713.jpg&type=sc960_832",
     content: "등교룩",
   },
   {
     id: 2,
     createdDate: new Date("2024-03-23").getTime(),
-    img: "",
+    img: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA3MjFfMjA2%2FMDAxNjg5OTAyMDk4Mzg3.brFAxCLWYIt5h3Qs2LADhPAoP8o3Cge1yRPJCaOMrW4g.MoyLkF5LUXrNbKrjb9U3CLFrvE48OdjP3Rvzs6Ao57og.JPEG.gguu1029%2FIMG_3142.jpg&type=sc960_832",
     content: "편의점 마실 나가는 룩",
   },
   {
     id: 3,
     createdDate: new Date("2024-02-22").getTime(),
-    img: "",
+    img: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMjZfMjcy%2FMDAxNzA2MjU1OTU3MzI0.WzqeUuY3GDHpOrFMVbRztjliu2dBLe6_pIUMyd7De8og.Bu24FaXCXbYnbyk7d5FdjhWfX0CieuqpSZ6NVzaCYHAg.JPEG.fidele24%2FIMG_8285.jpg&type=sc960_832",
     content: "꾸꾸꾸룩",
   },
 ]
@@ -83,7 +83,21 @@ function App() {
   const [data, dispatch] = useReducer(reducer, mockData);
   //일기 id생성
   const idRef = useRef(3);
+  //lookbook id생성
+  const lookidRef = useRef(4);
+  const [lookdata, setLookData] = useState(lookData);
 
+  const onCreateLook = (img,content) => {
+    const createdDate = new Date().getTime();
+    const newLook = {
+      createdDate,
+      img,
+      content,
+      id: lookidRef.current,
+    };
+    lookidRef.current++;
+    setLookData([newLook,...lookdata]);
+  }
   //새로운 일기 추가, 새로운 일기에 관한 날짜, id, content에 관한 전달내용을 바탕으로 새로운 일기 객체를 생성하고 일기배열에 추가해준다 
   const onCreate = (createdDate, content) => {
     dispatch({
@@ -128,9 +142,9 @@ function App() {
                 <Route path='/new' element={<New />} />
                 <Route path='/edit/:id' element={<Edit />} />
                 <Route path='/diary/:id' element={<Diary />} />
-                <Route path='/lookbook' element={<LookBook />} />
+                <Route path='/lookbook' element={<LookBook lookdata={lookdata}/>} />
                 <Route path='/weather' element={<Weather />} />
-                <Route path='/newlook' element={<NewLook/>} />
+                <Route path='/newlook' element={<NewLook onCreateLook={onCreateLook}/>} />
               </Routes>
             </div>
             <MyMenu />

@@ -1,16 +1,16 @@
 import './LookList.css';
 
-const LookList = () => {
+const LookList = ({id, createdDate, img, content}) => {
     return (
         <div className="LookList">
             <div className="look_date">
-                {new Date().toLocaleDateString()}
+                {new Date(createdDate).toLocaleDateString()}
             </div>
             <div className="look_imgupload">
-                사진
+                <img src= {img} />
             </div>
             <div className="look_intro">
-                오늘의 look한 줄 소개
+                #{content}
             </div>
         </div>
     )

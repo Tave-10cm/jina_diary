@@ -1,10 +1,31 @@
 .LookBook .look_title {
     padding-top: 15px;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .LookBook .look_list {
     display: flex;
     flex-wrap: wrap;
 }
+
+.LookBook .search_bar > input{
+    width: 360px;
+    border: none;
+    border-bottom: 2px solid #7d5959;
+    height: 35px;
+    margin-right: 10px;
+    margin-left: 20px;
+    background-color: #faf1f2;
+    font-family: Yeon sung;
+    font-size: 18px;
+}
+
+.scroll_section {
+    margin-top: 20px;
+    width: 100%; /* 부모 컨테이너의 너비 설정 */
+    height: 500px; /* 부모 컨테이너의 높이 설정 */
+    overflow: auto; /* 컨테이너 내용이 페이지를 벗어날 때 스크롤 활성화 */
+}
+
