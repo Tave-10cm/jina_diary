@@ -10,7 +10,26 @@ import LookBook from './pages/LookBook';
 import Weather from './pages/Weather';
 import NewLook from './pages/NewLook';
 
-
+const lookData = [
+  {
+    id: 1,
+    createdDate: new Date("2024-03-24").getTime(),
+    img:"",
+    content: "등교룩",
+  },
+  {
+    id: 2,
+    createdDate: new Date("2024-03-23").getTime(),
+    img: "",
+    content: "편의점 마실 나가는 룩",
+  },
+  {
+    id: 3,
+    createdDate: new Date("2024-02-22").getTime(),
+    img: "",
+    content: "꾸꾸꾸룩",
+  },
+]
 
 const mockData = [
   {
@@ -54,7 +73,7 @@ const reducer = (state, action) => {
       return state;
   }
 }
-//일기데이터를 공급할 context
+//일기데이터,룩데이터를 공급할 context
 export const DiaryStateContext = createContext();
 //일기 추가,삭제,수정 함수를 공급할 context
 export const DiaryDispatchContext = createContext();

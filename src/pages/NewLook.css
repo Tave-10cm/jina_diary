@@ -39,3 +39,7 @@
     justify-content: space-between;
 
 }
+
+.NewLook > section >img{
+    width: 400px;
+}
