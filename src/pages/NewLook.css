@@ -1,0 +1,41 @@
+.NewLook > section{
+    margin-bottom: 40px;
+}
+
+.NewLook > section > h4{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.NewLook > section > input, textarea {
+    background-color: #f1d1d2;
+    color: #faf1f2;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: Yeon sung;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.NewLook > section >textarea{
+    padding: 20px;
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    /* 박스가 화면 밖으로 나가지 않도록 한다. */
+    box-sizing: border-box;
+    color: white;
+}
+
+.NewLook .look_btn {
+    display: flex;
+    justify-content: space-between;
+
+}

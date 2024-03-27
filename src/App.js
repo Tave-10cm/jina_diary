@@ -8,6 +8,8 @@ import MyMenu from './components/MyMenu';
 import { useReducer, useRef, createContext } from 'react';
 import LookBook from './pages/LookBook';
 import Weather from './pages/Weather';
+import NewLook from './pages/NewLook';
+
 
 
 const mockData = [
@@ -108,7 +110,8 @@ function App() {
                 <Route path='/edit/:id' element={<Edit />} />
                 <Route path='/diary/:id' element={<Diary />} />
                 <Route path='/lookbook' element={<LookBook />} />
-                <Route path='weather' element={<Weather />} />
+                <Route path='/weather' element={<Weather />} />
+                <Route path='/newlook' element={<NewLook/>} />
               </Routes>
             </div>
             <MyMenu />

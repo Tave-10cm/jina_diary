@@ -1,0 +1,10 @@
+.LookBook .look_title {
+    padding-top: 15px;
+    display: flex;
+    justify-content: right;
+}
+
+.LookBook .look_list {
+    display: flex;
+    flex-wrap: wrap;
+}
