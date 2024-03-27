@@ -11,7 +11,7 @@ const HeartSvg = () => (
 
 const HeartIcon = (props) => <Icon component={HeartSvg} {...props} />;
 
-const DiaryItem = ({ id, emotionId, createdDate, content }) => {
+const DiaryItem = ({ id, imageSrcc, createdDate, content }) => {
     const navigate = useNavigate();
 
     return (

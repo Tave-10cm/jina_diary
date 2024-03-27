@@ -29,7 +29,7 @@ body {
 }
 
 .App {
-    min-height: 90vh;
+    min-height: 88vh;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -40,12 +40,13 @@ body {
 .MyMenu {
     padding-top: 20px;
     display: flex;
+    height: 70px;
 }
 
 .MyMenu>button {
     font-family: Yeon sung;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 43px;
@@ -58,6 +59,7 @@ body {
     border: 1px solid #faf1f2;
     border-radius: 5px;
     box-sizing: border-box;
+    justify-content: center;
 
 }
 
@@ -72,7 +74,7 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 15px;
-    background-color:#f1d1d2;
+    background-color: #f1d1d2;
     border: none;
     color: #faf1f2;
     font-size: 20px;
@@ -88,7 +90,7 @@ body {
     border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color:#f1d1d2;
+    background-color: #f1d1d2;
     border: none;
     color: #faf1f2;
     font-size: 20px;
@@ -99,6 +101,3 @@ body {
 
     font-weight: bold;
 }
-
-
-

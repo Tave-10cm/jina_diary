@@ -2,7 +2,7 @@
     padding-top: 15px;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+  
 }
 
 .LookBook .look_list {
@@ -25,7 +25,7 @@
 .scroll_section {
     margin-top: 20px;
     width: 100%; /* 부모 컨테이너의 너비 설정 */
-    height: 500px; /* 부모 컨테이너의 높이 설정 */
+    height: 540px; /* 부모 컨테이너의 높이 설정 */
     overflow: auto; /* 컨테이너 내용이 페이지를 벗어날 때 스크롤 활성화 */
 }
 

@@ -52,6 +52,18 @@ const Editor = ({ initData, onSubmit }) => {
         onSubmit(input);
     }
 
+    const onUpload = (e) => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+
+        return new Promise((resolve) => {
+            reader.onload = () => {
+                resolve();
+            };
+        });
+    }
+
     return (
         <div className='Editor'>
             <section className='date_section'>
@@ -63,7 +75,7 @@ const Editor = ({ initData, onSubmit }) => {
                     type='date' />
             </section>
             <section className='img_section'>
-                <h4>오늘의 감정</h4>
+                <h4>오늘의 기록</h4>
             </section>
             <section className='content_section'>
                 <h4>오늘의 일기</h4>

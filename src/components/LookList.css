@@ -9,7 +9,8 @@
     width: 250px;
     height: 340px;
     cursor: pointer;
-    background-color: #c1a3a3;
+    background-color: #d7b9b9;
+    border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
